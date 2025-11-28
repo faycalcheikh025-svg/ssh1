@@ -47,16 +47,16 @@ app.post('/generate', (req, res) => {
     const output = `
 ✅ Cuenta SSH creada
 
-Host: ${req.hostname}
-IP: ${req.hostname}
+Host: ${google.com}
+IP: ${youtube.com}
 Puerto: 443
-Usuario: ${username}
-Contraseña: ${password}
+Usuario: ${vip}
+Contraseña: ${14}
 Expira en: ${days} día(s)
 
 Error al activar websocket
 Path: /app53
-SNI: ${req.hostname}
+SNI: ${youtube.com}
     `.trim();
 
     res.send(output);
@@ -65,4 +65,5 @@ SNI: ${req.hostname}
 
 app.listen(PORT, () => {
   console.log(`Servidor SSH Generator escuchando en puerto ${PORT}`);
+
 });
